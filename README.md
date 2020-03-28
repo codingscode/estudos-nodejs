@@ -1,4 +1,4 @@
-# Estudos Node.JS
+# Estudos Node.js
 
 Acesse em: (https://estudos-nodejs.herokuapp.com/documentation)
 
@@ -15,16 +15,17 @@ Nessa simples aplicação foram trabalhados os conceitos de multi banco de dados
 - Documentação: Swagger /documentation
 - Publicação do Serviço: Heroku
 
-## Docker para MongoDB e Postgres
+## Como usar
 
+Criar bancos no Docker:
 ```shell
 docker run --name projeto-postgres -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=admin -e POSTGRES_DB=herois -p 5432:5432 -d postgres
+```
 
+```shell
 docker run --name mongodb -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=admin -d mongo
 
 ```
-
-## Como usar
 
 Instalar as dependências:
 ```shell

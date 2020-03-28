@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "10.13.0"
+  },
   "scripts": {
     "postinstall": "cross-env NODE_ENV=prod npm test",
     "prod": "cross-env NODE_ENV=prod node api.js",
