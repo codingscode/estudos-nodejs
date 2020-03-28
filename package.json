@@ -7,10 +7,10 @@
     "node": "10.13.0"
   },
   "scripts": {
-    "prod:test": "cross-env NODE_ENV=prod npm test",
     "prod": "cross-env NODE_ENV=prod node api.js",
     "start": "cross-env NODE_ENV=dev node api.js",
-    "test": "nyc --reporter=html mocha --timeout 10000 tests/*.test.js --exit"
+    "test:prod": "cross-env NODE_ENV=prod npm test",
+    "test": "nyc --reporter=html mocha --timeout 20000 tests/*.test.js --exit"
   },
   "author": "mailysantos",
   "license": "ISC",
